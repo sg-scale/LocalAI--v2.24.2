@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           submodules: true
       - uses: actions/setup-go@v5
@@ -140,7 +140,7 @@ jobs:
           && sudo apt-get update \
           && sudo apt-get install -y git
       - name: Clone
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           submodules: true
       - uses: actions/setup-go@v5
@@ -241,7 +241,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           submodules: true
       - uses: actions/setup-go@v5
@@ -276,7 +276,7 @@ jobs:
     runs-on: macos-13
     steps:
       - name: Clone
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           submodules: true
       - uses: actions/setup-go@v5
@@ -318,7 +318,7 @@ jobs:
     runs-on: macos-14
     steps:
       - name: Clone
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           submodules: true
       - uses: actions/setup-go@v5
