@@ -125,7 +125,7 @@ jobs:
            make --jobs=5 --output-sync=target -C backend/python/parler-tts test
       - name: Setup tmate session if tests fail
         if: ${{ failure() }}
-        uses: mxschmitt/action-tmate@v3.19
+        uses: mxschmitt/action-tmate@v3.24
         with:
           detached: true
           connect-timeout-seconds: 180
